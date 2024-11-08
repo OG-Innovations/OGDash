@@ -112,34 +112,12 @@ Rectangle {
             spacing: parent.width * 0.05
             Image {
                 id:contactQR
-                source: "qrc:/graphics/contactQR.png" // Replace with your image file path
-                width: helpBackground.width * 0.16 //256
-                height: helpBackground.width * 0.16 //256 // Adjust as needed
+                source: "qrc:/graphics/Logo.png" // Replace with your image file path
+                width: helpBackground.width * 800 //256
+                height: helpBackground.width * 480 //256 // Adjust as needed
             }
-            Image {
-                id:facebookQR
-                source: "qrc:/graphics/facebookQR.png" // Replace with your image file path
-                width: helpBackground.width * 0.16 //256
-                height: helpBackground.width * 0.16 //256 // Adjust as needed
-            }
-            Image {
-                id:instagramQR
-                source: "qrc:/graphics/instagramQR.png" // Replace with your image file path
-                width: helpBackground.width * 0.16 //256
-                height: helpBackground.width * 0.16 //256 // Adjust as needed
-            }
-            Image {
-                id:userManualQR
-                source: "qrc:/graphics/userManualQR.png" // Replace with your image file path
-                width: helpBackground.width * 0.16 //256
-                height: helpBackground.width * 0.16 //256 // Adjust as needed
-            }
-            Image {
-                id:reviewQR
-                source: "qrc:/graphics/warrantyQR.png" // Replace with your image file path
-                width: helpBackground.width * 0.16 //256
-                height: helpBackground.width * 0.16 //256 // Adjust as needed
+
             }
         }
-}
+
 

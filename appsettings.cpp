@@ -344,21 +344,8 @@ QString AppSettings::getDaemonActivationKey()
     QStringList parts = mac.split(":");
     if (parts.size() == 6)
     {
-        bool ok;
-        int octet3 = parts[3].toInt(&ok, 16);
-        int octet4 = parts[4].toInt(&ok, 16);
-        int octet5 = parts[5].toInt(&ok, 16);
-
-        if (ok)
-        {
-            QString strOctet3 = QString("%1").arg(octet3, 3, 10, QChar('0'));
-            QString strOctet4 = QString("%1").arg(octet4, 3, 10, QChar('0'));
-            QString strOctet5 = QString("%1").arg(octet5, 3, 10, QChar('0'));
-
-            return strOctet3 + "-" + strOctet4 + "-" + strOctet5;
-        }
-    }
     return "000-000-000";
+    }
 }
 
 
