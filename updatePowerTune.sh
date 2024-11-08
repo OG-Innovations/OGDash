@@ -28,7 +28,7 @@ if [ -d /home/root ]; then
                 ./updateRecovery.sh
                 else
                 mkdir /home/pi/Recoverysrc
-                git clone https://github.com/PowerTuneDigital/PowerTuneDigitalRecovery.git /home/pi/Recoverysrc
+                git clone https://github.com/OG-Innovations/OGDash.git /home/pi/Recoverysrc
                 cd /home/pi/Recoverysrc
                 ./updateRecovery.sh
                 fi
@@ -43,7 +43,7 @@ if [ -d /home/root ]; then
 		else
 		echo "Create source directory and clone PowerTune Repo"
 		mkdir /home/pi/src
-		git clone https://github.com/PowerTuneDigital/PowerTuneDigitalOfficial.git /home/pi/src
+		git clone https://github.com/OG-Innovations/OGDash.git /home/pi/src
 		cd src
 		./updatedaemons.sh
 		./updateUserDashboards.sh
@@ -93,7 +93,7 @@ if nc -zw5 www.github.com 443; then
 		else
 		echo "Create source directory and clone PowerTune Repo"
 		mkdir /home/pi/src
-		git clone https://github.com/PowerTuneDigital/PowerTuneDigitalOfficial.git /home/pi/src  
+		git clone https://github.com/OG-Innovations/OGDash.git /home/pi/src  
 		cd src
 		./fixcan.sh
 		./updatedaemons.sh
